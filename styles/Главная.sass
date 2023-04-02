@@ -1,0 +1,118 @@
+.u-section-1 
+	background-image: url("../images/dfdfdf-min.jpg")
+	background-position: 50% 50%
+	
+	.u-sheet-1 
+		min-height: 866px
+	
+	.u-list-1 
+		width: 695px
+		margin: 63px auto 0 0
+	
+	.u-repeater-1 
+		grid-template-columns: repeat(2, calc(50% - 14px))
+		min-height: 659px
+		grid-gap: 28px
+	
+	@for $i from 1 to 5
+		.u-list-item-#{$i} 
+			background-image: none
+			box-shadow: 0 0 15px 0 rgba(0,0,0,1)
+
+		.u-icon-#{$i}
+			height: 77px
+			width: 77px
+			background-image: none
+			margin: 0 auto 0 0
+			padding: 0
+
+		.u-btn-#{$i} 
+			background-image: none
+			border-style: solid
+			font-style: italic
+			margin: 20px auto 0 0
+			padding: 0
+
+	$list: 1, 3, 5, 7
+	
+	@each $i in $list
+		.u-text-#{$i}
+			margin: 20px 0 0
+	
+	$list: 2, 4, 6, 8
+
+	@each $i in $list
+		.u-text-#{$i}
+			font-size: 0.875rem
+			font-style: italic
+			margin: 20px 0 0
+	
+	$list: 2, 3, 4
+
+	@each $i in $list
+		.u-container-layout-#{$i} 
+				padding: 30px
+
+	.u-text-9 
+		margin: 20px 783px 60px 0
+	
+	.u-btn-5 
+		border-style: solid
+		padding: 0
+
+@media (max-width: 1199px) 
+	.u-section-1
+		.u-sheet-1
+			min-height: 714px
+
+		.u-list-1
+			height: auto
+
+		.u-text-9
+			margin-right: 583px
+
+@media (max-width: 991px)
+	.u-section-1
+		background-position: 67.5% 50%
+
+		.u-sheet-1
+			min-height: 866px
+
+		.u-list-1
+			width: 586px
+
+		.u-repeater-1
+			min-height: 686px
+
+		.u-text-9
+			margin-right: 363px
+
+@media (max-width: 767px)
+	.u-section-1
+		.u-sheet-1
+			min-height: 650px
+
+		.u-list-1
+			width: 540px
+  
+		@for $i from 1 to 5
+			.u-container-layout-#{$i}
+				padding-left: 20px
+				padding-right: 20px
+
+		.u-text-9
+			argin-right: 183px
+
+@media (max-width: 575px)
+	.u-section-1
+		.u-sheet-1
+			min-height: 409px
+
+		.u-list-1
+			width: 340px
+
+		.u-repeater-1 
+			grid-template-columns: repeat(1, 100%)
+
+		.u-text-9 
+			margin-right: 0  	
